@@ -4,19 +4,19 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 html, body {
-  height: 100%;
-  position: relative;
+  min-height: 100%;
+  // position: relative;
 }
 html {
   padding: 0;
   background: url(/images/HH_splash_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Varela Round', sans-serif;
   color: #58595b;
 }
 body {
   background-color: transparent;
+  font-family: 'Varela Round', sans-serif;
 }
 .logo {
   max-width: 430px;
@@ -24,7 +24,7 @@ body {
   padding-bottom: 2em;
 }
 main {
-  width: 75%;
+  width: calc(100% - 30%);
   text-align: center;
 }
 main {
@@ -36,7 +36,7 @@ main {
 footer {
   position: absolute;
   bottom: 1em;
-  width: 75%;
+  width: calc(100% - 30%);
   text-align: center;
 }
 
