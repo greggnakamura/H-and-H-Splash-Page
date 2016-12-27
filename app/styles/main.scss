@@ -5,11 +5,10 @@ $icon-font-path: '../fonts/';
 // endbower
 html, body {
   min-height: 100%;
-  // position: relative;
 }
 html {
   padding: 0;
-  background: url(/images/HH_splash_background.jpg);
+  background: url(/images/HH_splash_background-lg.jpg) 100% 68%;
   background-repeat: no-repeat;
   background-size: cover;
   color: #58595b;
@@ -19,7 +18,7 @@ body {
   font-family: 'Varela Round', sans-serif;
 }
 .logo {
-  max-width: 430px;
+  max-width: 30em;
   width: 100%;
   padding-bottom: 2em;
 }
@@ -29,20 +28,82 @@ main {
 }
 main {
   .container {
-    width: 430px;
+    width: 30em;
     margin-top: 14em;
   }
 }
 footer {
   position: absolute;
-  bottom: 1em;
-  width: calc(100% - 30%);
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  font-size: 0.8em;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
     width: 100%;
+  }
+}
+@media screen and (min-width: 736px) {
+  footer {
+    width: calc(100% - 30%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main .container {
+    margin-top: calc(100% - 80%);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  main, main .container {
+    width: 100%;
+  }
+  footer {
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+// ipad
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  html {
+    background-position: 75% 0;
+  }
+  footer {
+    bottom: 2em;
+  }
+}
+
+// phones portrait
+@media only screen
+and (max-device-width : 736px)
+and (orientation : portrait) {
+  html {
+    background-position: 75% 0;
+  }
+}
+
+// phones landscape
+@media only screen
+and (max-device-width : 736px)
+and (orientation : landscape) {
+  main .container {
+    margin-top: 1.5em;
+    line-height: 1.2;
+  }
+  .logo {
+    padding-bottom: 1.25em;
+  }
+  footer {
+    position: initial;
+    bottom: 0;
   }
 }
