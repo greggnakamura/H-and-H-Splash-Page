@@ -1,0 +1,48 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+html, body {
+  height: 100%;
+  position: relative;
+}
+html {
+  padding: 0;
+  background: url(/images/HH_splash_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Varela Round', sans-serif;
+  color: #58595b;
+}
+body {
+  background-color: transparent;
+}
+.logo {
+  max-width: 430px;
+  width: 100%;
+  padding-bottom: 2em;
+}
+main {
+  width: 75%;
+  text-align: center;
+}
+main {
+  .container {
+    width: 430px;
+    margin-top: 14em;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 1em;
+  width: 75%;
+  text-align: center;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
